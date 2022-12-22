@@ -1,0 +1,13 @@
+div section{
+    background: rgb(245, 245, 245);
+    border-radius: 1%;
+}
+.head-title{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10%;
+    margin-top: 2%;
+}
+.custom-btn{
+    width: 98%;
+    margin-bottom: 8%;
+}

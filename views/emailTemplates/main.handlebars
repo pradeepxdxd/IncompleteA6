@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        .head-title {
+            border: 1px solid red;
+            background: rgb(255, 0, 0);
+            border-radius: 12px;
+            color: azure;
+            padding-left: 42px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="head-title mt-3">Just Pizza</h1>
+        <h2>Hii {{name}},</h2>
+        <h2>Thanks for ordering pizza online on just pizza, {{name}}</h2>
+        <p>We hope you enjoyed your meal from <strong>Just Pizza.</strong></p>
+        <p>If you have any feedback for <strong>Just Pizza</strong> or about your ordering experience, we'd love to hear
+            from you - simply reply reply to this email and we'll be in touch.</p>
+        <hr>
+        <div class="card text-center" style="width: 58rem;">
+            <div class="card-body">
+                <h5 class="card-title">ORDER SUMMARY</h5>
+                <div class="row">
+                    <div class="col">
+                        <p>Order ID : {{foodID}}</p>
+                    </div>
+                    <div class="col">
+                        <p>Location : {{location}}, {{address}}</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>Pizza : {{foodName}}</p>
+                    </div>
+                    <div class="col">
+                        <p>for delivery details contact to +913827382377</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    document.getElementById('qun').innerHTML = sessionStorage.getItem('qunt');
+</script>

@@ -1,0 +1,20 @@
+{{> menu-nav}}
+
+<div class="container">
+    <h3 class="mt-5">Add Food</h3>
+    <form action="/menu/food-data" method="post" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Food Name</label>
+            <input name="fname" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Food Price</label>
+            <input name="fprice" type="text" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Food Image</label>
+            <input name="fImg" type="file" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-dark">Add Food</button>
+    </form>
+</div>

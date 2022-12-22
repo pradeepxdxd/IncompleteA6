@@ -1,0 +1,28 @@
+{{> header}}
+
+<div class="container">
+    <div class="mt-5">
+        {{#if alert}}
+        <div class="alert alert-danger" role="alert">
+            <h4>Invalid Email And Password</h4>
+        </div>
+        {{/if}}
+        {{#if flag}}
+        <h5 class="alert alert-danger">Invalid Email And Password</h5>
+        {{/if}}
+        <h3>Login</h3>
+        <form action="/login/logdata" method="post">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input name="email" type="email" class="form-control" id="exampleInputEmail1"
+                    aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Enter Password</label>
+                <input name="pass" type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <a href="/login/forgetpass" class="link-secondary">Forget Password</a><br>
+            <button type="submit" class="btn btn-dark mt-3">Login</button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+.topnav {
+    background-color: rgb(241, 242, 243);  
+    /* cjange |||||||*/
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #332f2f;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #adc1d4;
+    color: black;
+    /* chansss */
+}
+
+.topnav a.active {
+    background-color: #ff0000;
+    color: rgb(197, 187, 187);
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+    float: right;
+    font-family: sans-serif;
+}
+
+.nav-img{
+    width: 60px;
+    border-radius: 50px;
+}

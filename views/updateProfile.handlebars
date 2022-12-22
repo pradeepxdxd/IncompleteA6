@@ -1,0 +1,35 @@
+{{> menu-nav}}
+
+<div class="container">
+    {{#if flag}}
+    <h2 class="alert alert-danger mt-3">
+        <small>Email Already Exist</small>
+    </h2>
+    {{/if}}
+    <h3 class="mt-5">Update Profile</h3>
+    <form method="post" action="/profile/update-data">
+        <input type="hidden" name="id" value={{data._id}}>
+        <div class="mb-3 mt-3">
+            <label for="exampleInputEmail1" class="form-label">Name</label>
+            <input name="name" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value={{data.name}}>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value={{data.email}}>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Phone</label>
+            <input name="phone" type="text" class="form-control" id="exampleInputPassword1" value={{data.phone}}>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Location</label>
+            <input name="location" type="text" class="form-control" id="exampleInputPassword1" value={{data.location}}>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Address</label>
+            <input name="address" type="text" class="form-control" id="exampleInputPassword1" value={{data.address}}>
+        </div>
+        <button type="submit" class="btn btn-dark">Update</button>
+    </form>
+    <br>
+</div>

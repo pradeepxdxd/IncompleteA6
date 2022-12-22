@@ -1,0 +1,26 @@
+{{> menu-nav}}
+
+<div class="container">
+    {{#if flag}}
+        <h5 class="alert alert-success edit-alert">Pizza added in the cart</h5>
+    {{/if}}
+    <div class="row">
+        {{#each item}}
+            <div class="card col-md-3 m-4 mx-auto" style="width: 20rem;">
+                <img src='/pizzaImg/{{foodImg}}' class="card-img-top"
+                    alt="err" width="100px" height="200px">
+                <div class="card-body">
+                    <h5 class="card-title text-center mt-1">{{foodName}}</h5>
+                    <div class="row">
+                        <div class="col">
+                            <a href="/menu/cartinsession/{{_id}}" class="btn btn-dark mt-1">Add to cart</a>
+                        </div>
+                        <div class="col">
+                            <h5 class="text-center mt-2">${{foodPrice}}</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+</div>

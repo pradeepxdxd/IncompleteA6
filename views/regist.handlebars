@@ -1,0 +1,43 @@
+{{> header}}
+
+<div class="container">
+    {{#if alert}}
+    <div class="alert alert-danger" role="alert">
+        <h4>Invalid Fields</h4>
+    </div>
+    {{/if}}
+    {{#if flag}}
+    <h2 class="alert alert-danger mt-3">
+        <small>Email Already Exist</small>
+    </h2>
+    {{/if}}
+    <h3 class="mt-5">Register</h3>
+    <form method="post" action="/register/regdata">
+        <div class="mb-3 mt-3">
+            <label for="exampleInputEmail1" class="form-label">Name</label>
+            <input name="name" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Enter Password</label>
+            <input name="pass" type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Phone</label>
+            <input name="phone" type="text" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Location</label>
+            <input name="location" type="text" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Address</label>
+            <input name="address" type="text" class="form-control" id="exampleInputPassword1">
+        </div>
+        <button type="submit" class="btn btn-dark">Sign Up</button>
+    </form>
+    <br>
+</div>

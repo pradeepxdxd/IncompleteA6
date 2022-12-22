@@ -1,0 +1,37 @@
+{{> menu-nav}}
+
+<div class="wrapper">
+    <div class="left">
+        <h4>{{data.name}}</h4>
+    </div>
+    <div class="right">
+        <div class="info">
+            <h3>Information</h3>
+            <div class="info_data">
+                <div class="data">
+                    <h4>Email</h4>
+                    <p>{{data.email}}</p>
+                </div>
+                <div class="data">
+                    <h4>Phone</h4>
+                    <p>{{data.phone}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="projects">
+            <h3>Destination</h3>
+            <div class="projects_data">
+                <div class="data">
+                    <h4>Location</h4>
+                    <p>{{data.location}}</p>
+                </div>
+                <div class="data">
+                    <h4>Address</h4>
+                    <p>{{data.address}}</p>
+                </div>
+            </div>
+        </div>
+        <a href="/profile/editProfile/{{data._id}}" class="btn btn-primary">Edit</a>
+        <a href="/profile/resetpasspage" class="btn btn-warning">Rest Password</a>
+    </div>
+</div>
